@@ -40,4 +40,54 @@ describe('Cate-Blanchett-API-be routes', () => {
         expect(res.body).toEqual(expect.arrayContaining(suits));
       });
   });
+
+  // it('deletes a suit via DELETE', async() => {
+  //   const expectation = {};
+
+  //   await request(app)
+  //     .delete('/api/v1/suits/1');
+
+  //   const data = await request(app)
+  //     .get('/api/v1/suits/1');
+
+  //   expect(data.body).toEqual(expectation);
+  // });
+
+  // it('gets a suit by id via GET', async() => {
+  //   const expected = {
+  //     id: '1',
+  //     color: 'yellow',
+  //     designer: 'Fendi',
+  //     image: 'test1.png'
+  //   };
+
+  //   const data = await request(app)
+  //     .get('/api/v1/suits/1');
+
+  //   expect(data.body).toEqual(expected);
+  // });
+
+  // it('updates a suit by id via UPDATE', async() => {
+  //   const suit = await Suit.insert({
+  //     color: 'yellow',
+  //     designer: 'Fendi',
+  //     image: 'test1.png'
+  //   });
+
+  //   return request(app)
+  //     .put(`/api/v1/suits/${suit.id}`)
+  //     .send({
+  //       color: 'green',
+  //       designer: 'some guy',
+  //       image: 'test2.png'
+  //     })
+  //     .then(res => {
+  //       expect(res.body).toEqual({
+  //         id: expect.any(String),
+  //         color: 'green',
+  //         designer: 'some guy',
+  //         image: 'test2.png'
+  //       });
+  //     });
+  // });
 });
